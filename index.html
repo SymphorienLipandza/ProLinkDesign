@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProlikDesign Training Center</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="img/site.webmanifest" />
+    <link rel="android-chrome" href="img/android-chrome-192x192.png">
+    <link rel="android-chrome" href="img/android-chrome-512x512.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.png"  alt="ProlikDesign Training Center">
+            <div>
+                <span>ProlikDesign</span><br>
+                <small class="subtitle">Training center</small>
+                </div>
+            </div>
+            <!-- Hamburger Menu Icon -->
+            <button id="menu-toggle" class="menu-toggle">
+                <i class="fas fa-bars"></i> <!-- Font Awesome hamburger icon -->
+            </button>
+            <nav id="main-nav" >
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info1">
+                <a href="mailto:ProlikDesign25@gmail.com">
+                    <i class="fas fa-envelope icon"></i> Email
+                </a>
+                <a href="tel:+242056629702">
+                    <i class="fab fa-whatsapp icon"></i> WhatsApp
+                </a>
+            </div>
+            <div class="language-toggle">
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Separator -->
+    <hr class="navbar-separator">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Excellence in BIM and CAD</h1>
+            <p></p>
+            <a href="#courses" class="cta-button">View Courses</a>
+        </div>
+    </section>
+
+
+     <!-- About Us Section -->
+     <section id="features" class="features">
+        <h2>Why Choose ProlikDesign?</h2>
+        <p>At ProlikDesign Training Center, we are committed to providing the best learning experience for our students. Here’s what sets us apart:</p>
+        
+        <div class="feature-grid">
+            <div class="feature">
+                <i class="fas fa-chalkboard-teacher icon"></i>
+                <h3>Expert Instructors</h3>
+                <p>Learn from industry professionals with years of experience in architecture, design, and BIM software.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-laptop-code icon"></i>
+                <h3>Hands-On Training</h3>
+                <p>Get practical, real-world experience with our hands-on courses and projects.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-globe icon"></i>
+                <h3>Flexible Learning</h3>
+                <p>Choose between online and in-person classes to fit your schedule and learning preferences.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-certificate icon"></i>
+                <h3>Certification</h3>
+                <p>Receive a recognized certification upon completion of your course to boost your career.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <h2>Programmes</h2>
+        <p>Discover our comprehensive range of courses designed to help you master the latest tools and technologies in architecture, structure, and rendering.
+        Whether you're a beginner or an experienced professional, our programmes are tailored to meet your learning needs and career goals.</p>
+       
+        <h3 class="cat"><i class="fas fa-building icon"></i> Architecture</h3>
+        <div class="course-grid">
+            
+            <div class="course">
+                <img src="img/revit.jpg" alt="Revit Architecture">
+                <h4>Revit Architecture</h4>
+                <p>Language: English & French</p>
+            </div>
+            <div class="course">
+                <img src="img/3dsmax.jpg" alt="3Ds Max">
+                <h4>3Ds Max</h4>
+                <p>Language: English</p>
+            </div>
+            <div class="course">
+                <img src="img/autocad.jpg" alt="AutoCAD">
+                <h4>AutoCAD</h4>
+                <p>Language:  English & French</p>
+            </div>
+            <div class="course">
+                <img src="img/archicad.jpg" alt="Archicad">
+                <h4>Archicad</h4>
+                <p>Language:  English & French</p>
+            </div>
+        </div>
+
+        <h3 class="cat"><i class="fas fa-ruler-combined icon"></i> Structure</h3>
+        <div class="course-grid">
+            <div class="course">
+                <img src="img/graitec.jpg" alt="Graitec OMD">
+                <h4>Graitec OMD</h4>
+                <p>Language: French</p>
+            </div>
+            <div class="course">
+                <img src="img/revit_structure.jpg" alt="Revit structure">
+                <h4>Revit Structure</h4>
+                <p>Language: English & French</p>
+            </div>
+            <div class="course">
+                <img src="img/etabs.png" alt="etabs">
+                <h4>ETABS</h4>
+                <p>Language: English</p>
+            </div>
+            <div class="course">
+                <img src="img/robot_structure.jpg" alt="Robot Structure">
+                <h4>Robot Structure analysis</h4>
+                <p>Language: English & French</p>
+            </div>
+        </div>
+
+        <h3 class="cat"><i class="fas fa-paint-brush icon"></i> Rendering</h3>
+        <div class="course-grid">
+            <div class="course">
+                <img src="img/v-ray3dsmax.jpg" alt="V-ray for 3Ds Max">
+                <h4>V-ray for 3Ds Max</h4>
+                <p>Language: English</p>
+            </div>
+            <div class="course">
+                <img src="img/Enscape.webp" alt="Enscape 3D">
+                <h4>Enscape 3D</h4>
+                <p>Language: English</p>
+            </div>
+            <div class="course">
+                <img src="img/twinmotion.jpg" alt="Twinmotion">
+                <h4>Twinmotion</h4>
+                <p>Language: English & French</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contacts</h2>
+        <p>Have questions or need more information? Reach out to us, and we'll be happy to assist you.</p>
+
+        <div class="contact-container">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Mazala, Moukondo, Brazzaville, Republic of the Congo</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+242056629702">+242 05 662 97 02</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+242061151206">+242 06 115 12 06</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:ProlikDesign25@gmail.com">ProlikDesign25@gmail.com</a></p>
+                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/+242056629702">Chat on WhatsApp</a></p>
+
+                <!-- Social Media Links -->
+                <div class="social-links"> 
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Optional: Embedded Map -->
+            <div class="map">
+                <h3>Our Location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.813351865644!2d15.258207!3d-4.2296002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6bcd6efa262769%3A0x42024317a228754d!2sROND%20POINT%20MAZALA!5e0!3m2!1sfr!2scg!4v1716912028652!5m2!1sfr!2scg" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Separator -->
+    <hr class="footer-separator">
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 ProlikDesign Training Center. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook icon facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-twitter icon twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-linkedin icon"></i> LinkedIn</a></li>
+        </ul>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Retour en haut"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Language Toggle Script -->
+    <script>
+        // Language select dropdown functionality
+        const languageSelect = document.getElementById('language-select');
+        if (languageSelect) {
+            languageSelect.addEventListener('change', (event) => {
+                const selectedLanguage = event.target.value; // Get the selected language
+
+                // Redirect to the appropriate page based on the selected language
+                if (selectedLanguage === 'fr') {
+                    window.location.href = 'index-fr.html'; // Redirect to French version
+                } else {
+                    window.location.href = 'index.html'; // Redirect to English version
+                }
+            });
+        }
+    </script>
+</body>
+</html>

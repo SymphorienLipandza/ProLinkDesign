@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ProlikDesign Training Center</title>
+    <link rel="stylesheet" href="style.css"> <!-- Main CSS file -->
+    <link rel="stylesheet" href="about.css"> <!-- About-specific CSS file -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="img/site.webmanifest" />
+    <link rel="android-chrome" href="img/android-chrome-192x192.png">
+    <link rel="android-chrome" href="img/android-chrome-512x512.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.png"  alt="ProlikDesign Training Center">
+            <div>
+                <span>ProlikDesign</span><br>
+                <small class="subtitle">Training center</small>
+                </div>
+            </div>
+            <!-- Hamburger Menu Icon -->
+            <button id="menu-toggle" class="menu-toggle">
+                <i class="fas fa-bars"></i> <!-- Font Awesome hamburger icon -->
+            </button>
+            <nav id="main-nav" >
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info1">
+                <a href="mailto:ProlikDesign25@gmail.com">
+                    <i class="fas fa-envelope icon"></i> Email
+                </a>
+                <a href="tel:+242056629702">
+                    <i class="fab fa-whatsapp icon"></i> WhatsApp
+                </a>
+            </div>
+            <div class="language-toggle">
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Separator -->
+    <hr class="navbar-separator">
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Welcome to ProlikDesign Training Center, where we empower individuals to master architectural and design software through world-class training tailored to your needs.</p>
+
+        <div class="about-content">
+            <!-- Mission -->
+            <div class="mission">
+                <i class="fas fa-bullseye icon"></i> <!-- Mission Icon -->
+                <h3>Our Mission</h3>
+                <p>Our mission is to provide high-quality training in architectural and design software, helping students and professionals achieve their career goals and excel in their fields.</p>
+            </div>
+
+            <!-- Vision -->
+            <div class="vision">
+                <i class="fas fa-eye icon"></i> <!-- Vision Icon -->
+                <h3>Our Vision</h3>
+                <p>We envision a world where every individual has access to the tools and knowledge needed to create innovative and sustainable designs.</p>
+            </div>
+
+            <!-- Team -->
+            <div class="team">
+                <i class="fas fa-users icon"></i> <!-- Team Icon -->
+                <h3>Our Team</h3>
+                <p>Our team consists of experienced professionals in architecture, design, and software training. We are passionate about sharing our knowledge and helping you succeed.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separator -->
+    <hr class="footer-separator">
+    
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 ProlikDesign Training Center. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook icon facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-twitter icon twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-linkedin icon"></i> LinkedIn</a></li>
+        </ul>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Retour en haut"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Language Toggle Script -->
+    <script>
+        // Language toggle functionality
+        const languageSelect = document.getElementById('language-select');
+        if (languageSelect) {
+            languageSelect.addEventListener('change', (event) => {
+                const selectedLanguage = event.target.value;
+                if (selectedLanguage === 'en') {
+                    window.location.href = 'about.html'; // Redirect to English version
+                } else {
+                    window.location.href = 'about-fr.html'; // Redirect to French version
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - ProlikDesign Training Center</title>
+    <link rel="stylesheet" href="style.css"> <!-- Main CSS file -->
+    <link rel="stylesheet" href="course.css"> <!-- Course-specific CSS file -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="img/site.webmanifest" />
+    <link rel="android-chrome" href="img/android-chrome-192x192.png">
+    <link rel="android-chrome" href="img/android-chrome-512x512.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script src="script.js"></script> <!-- JavaScript for enrollment button -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.png"  alt="ProlikDesign Training Center">
+            <div>
+                <span>ProlikDesign</span><br>
+                <small class="subtitle">Training center</small>
+                </div>
+            </div>
+            <!-- Hamburger Menu Icon -->
+            <button id="menu-toggle" class="menu-toggle">
+                <i class="fas fa-bars"></i> <!-- Font Awesome hamburger icon -->
+            </button>
+            <nav id="main-nav" >
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info1">
+                <a href="mailto:ProlikDesign25@gmail.com">
+                    <i class="fas fa-envelope icon"></i> Email
+                </a>
+                <a href="tel:+242056629702">
+                    <i class="fab fa-whatsapp icon"></i> WhatsApp
+                </a>
+            </div>
+            <div class="language-toggle">
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Separator -->
+    <hr class="navbar-separator">
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <h2>Explore All Courses</h2>
+        <p>Browse our full catalog of courses designed to help you master architectural and design software.</p>
+    
+    
+        <!-- Architecture Courses -->
+        <h3 class="cat"><i class="fas fa-building icon"></i> Architecture</h3>
+        <div class="course-grid">
+            <!-- Revit Architecture & Structure -->
+            <div class="course">
+                <img src="img/revit.jpg" alt="Revit Architecture">
+                <h4>Revit Architecture </h4>
+                <p>Learn building design, structural modeling, and documentation using Revit.</p>
+                <p><strong>Duration:</strong> 80 hours</p>
+                <p><strong>Who is this for?</strong> Beginners and professionals in architecture and construction.</p>
+                <button class="enroll-button" data-course-name="Revit Architecture & Structure">Enroll Now</button>
+                <a href="revit-architecture.html" class="info-button">Learn More</a>
+            </div>
+    
+            <!-- 3Ds Max -->
+            <div class="course">
+                <img src="img/3dsmax.jpg" alt="3Ds Max">
+                <h4>3Ds Max</h4>
+                <p>Master 3D modeling, animation, and rendering with 3Ds Max.</p>
+                <p><strong>Duration:</strong> 120 hours</p>
+                <p><strong>Who is this for?</strong> 3D artists and designers.</p>
+                <button class="enroll-button" data-course-name="3Ds Max">Enroll Now</button>
+                <a href="3dsmax.html" class="info-button">Learn More</a>
+            </div>
+    
+            <!-- AutoCAD -->
+            <div class="course">
+                <img src="img/autocad.jpg" alt="AutoCAD">
+                <h4>AutoCAD</h4>
+                <p>Learn 2D drafting and 3D modeling using AutoCAD.</p>
+                <p><strong>Duration:</strong> 90 hours</p>
+                <p><strong>Who is this for?</strong> Architects, engineers, and designers.</p>
+                <button class="enroll-button" data-course-name="AutoCAD">Enroll Now</button>
+                <a href="autocad.html" class="info-button">Learn More</a>
+            </div>
+    
+            <!-- Archicad -->
+            <div class="course">
+                <img src="img/archicad.jpg" alt="Archicad">
+                <h4>Archicad</h4>
+                <p>Master building design and documentation using Archicad.</p>
+                <p><strong>Duration:</strong> 80 hours</p>
+                <p><strong>Who is this for?</strong> Architects and designers.</p>
+                <button class="enroll-button" data-course-name="Archicad">Enroll Now</button>
+                <a href="archicad.html" class="info-button">Learn More</a>
+            </div>
+        </div>
+    
+        <!-- Structure Courses -->
+        <h3 class="cat"><i class="fas fa-ruler-combined icon"></i> Structure</h3>
+        <div class="course-grid">
+            <!-- Graitec OMD -->
+            <div class="course">
+                <img src="img/graitec.jpg" alt="Graitec OMD">
+                <h4>Graitec OMD</h4>
+                <p>Learn structural analysis and design using Graitec OMD.</p>
+                <p><strong>Duration:</strong> 50 hours</p>
+                <p><strong>Who is this for?</strong> Structural engineers and designers.</p>
+                <button class="enroll-button" data-course-name="Graitec OMD">Enroll Now</button>
+                <a href="graitec-omd.html" class="info-button">Learn More</a>
+            </div>
+    
+            <!-- Revit Structure -->
+            <div class="course">
+                <img src="img/revit_structure.jpg" alt="Revit Structure">
+                <h4>Revit Structure</h4>
+                <p>Master structural analysis, modeling, and documentation using Revit.</p>
+                <p><strong>Duration:</strong> 40 hours</p>
+                <p><strong>Who is this for?</strong> Structural engineers and designers.</p>
+                <button class="enroll-button" data-course-name="Revit Structure">Enroll Now</button>
+                <a href="revit-structure.html" class="info-button">Learn More</a>
+            </div>
+    
+            <!-- ETABS -->
+            <div class="course">
+                <img src="img/etabs.png" alt="ETABS">
+                <h4>ETABS</h4>
+                <p>Learn structural analysis and design using ETABS.</p>
+                <p><strong>Duration:</strong> 50 hours</p>
+                <p><strong>Who is this for?</strong> Structural engineers and designers.</p>
+                <button class="enroll-button" data-course-name="ETABS">Enroll Now</button>
+                <a href="etabs.html" class="info-button">Learn More</a>
+            </div>
+    
+            <!-- Robot Structure Analysis -->
+            <div class="course">
+                <img src="img/robot_structure.jpg" alt="Robot Structure Analysis">
+                <h4>Robot Structure Analysis</h4>
+                <p>Master structural analysis and design using Robot Structure.</p>
+                <p><strong>Duration:</strong> 50 hours</p>
+                <p><strong>Who is this for?</strong> Structural engineers and designers.</p>
+                <button class="enroll-button" data-course-name="Robot Structure Analysis">Enroll Now</button>
+                <a href="robot-structure.html" class="info-button">Learn More</a>
+            </div>
+        </div>
+    
+        <!-- Rendering Courses -->
+        <h3 class="cat"><i class="fas fa-paint-brush icon"></i> Rendering</h3>
+        <div class="course-grid">
+            <!-- V-ray for 3Ds Max -->
+            <div class="course">
+                <img src="img/v-ray3dsmax.jpg" alt="V-ray for 3Ds Max">
+                <h4>V-ray for 3Ds Max</h4>
+                <p>Learn photorealistic rendering techniques using V-ray.</p>
+                <p><strong>Duration:</strong> 20 hours</p>
+                <p><strong>Who is this for?</strong> 3D artists and designers.</p>
+                <button class="enroll-button" data-course-name="V-ray for 3Ds Max">Enroll Now</button>
+                <a href="vray-3dsmax.html" class="info-button">Learn More</a>
+            </div>
+    
+            <!-- Enscape 3D -->
+            <div class="course">
+                <img src="img/Enscape.webp" alt="Enscape 3D">
+                <h4>Enscape 3D</h4>
+                <p>Master real-time rendering and visualization using Enscape 3D.</p>
+                <p><strong>Duration:</strong> 15 hours</p>
+                <p><strong>Who is this for?</strong> Architects and designers.</p>
+                <button class="enroll-button" data-course-name="Enscape 3D">Enroll Now</button>
+                <a href="enscape-3d.html" class="info-button">Learn More</a>
+            </div>
+    
+            <!-- Twinmotion -->
+            <div class="course">
+                <img src="img/twinmotion.jpg" alt="Twinmotion">
+                <h4>Twinmotion</h4>
+                <p>Learn real-time rendering and animation using Twinmotion.</p>
+                <p><strong>Duration:</strong> 20 hours</p>
+                <p><strong>Who is this for?</strong> Architects and designers.</p>
+                <button class="enroll-button" data-course-name="Twinmotion">Enroll Now</button>
+                <a href="twinmotion.html" class="info-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Separator -->
+    <hr class="footer-separator">
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 ProlikDesign Training Center. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook icon facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-twitter icon twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-linkedin icon"></i> LinkedIn</a></li>
+        </ul>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Retour en haut"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Enrollment Form Modal -->
+    <div id="enrollment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeEnrollmentModal()">&times;</span>
+            <h2>Enrollment Form</h2>
+            <form id="enrollment-form">
+                <input type="hidden" id="course-name" name="course-name" value="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="profession">Profession:</label>
+                    <select id="profession" name="profession" required>
+                        <option value="" disabled selected>Select your profession</option>
+                        <option value="Student">Student</option>
+                        <option value="Architect">Architect</option>
+                        <option value="Civil Engineer">Civil Engineer</option>
+                        <option value="Structural Engineer">Structural Engineer</option>
+                        <option value="Construction Manager">Construction Manager</option>
+                        <option value="Interior Designer">Interior Designer</option>
+                        <option value="Landscape Architect">Landscape Architect</option>
+                        <option value="Building Designer">Building Designer</option>
+                        <option value="Quantity Surveyor">Quantity Surveyor</option>
+                        <option value="Project Manager">Project Manager</option>
+                        <option value="BIM Manager">BIM Manager</option>
+                        <option value="3D Visualizer">3D Visualizer</option>
+                        <option value="CAD Technician">CAD Technician</option>
+                        <option value="MEP Engineer">MEP Engineer</option>
+                        <option value="Urban Planner">Urban Planner</option>
+                        <option value="Construction Worker">Construction Worker</option>
+                        <option value="Site Engineer">Site Engineer</option>
+                        <option value="Real Estate Developer">Real Estate Developer</option>
+                        <option value="Freelancer">Freelancer</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Custom Alert Modal -->
+    <div id="custom-alert" class="custom-alert">
+        <div class="custom-alert-content">
+            <span id="custom-alert-message"></span>
+            <button id="custom-alert-close" class="cta-button">OK</button>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize EmailJS with your User ID
+        (function () {
+            emailjs.init('sOXgL7TWgDee4c32L'); // Replace with your EmailJS User ID
+        })();
+        // Language toggle functionality
+        const languageSelect = document.getElementById('language-select');
+        if (languageSelect) {
+            languageSelect.addEventListener('change', (event) => {
+                const selectedLanguage = event.target.value;
+                if (selectedLanguage === 'en') {
+                    window.location.href = 'courses.html'; // Redirect to English version
+                } else {
+                    window.location.href = 'courses-fr.html'; // Redirect to French version
+                }
+            });
+        }
+    </script>
+</body>
+</html>

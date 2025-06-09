@@ -1,0 +1,282 @@
+/* contact.css */
+
+/* Contact Section */
+.contact {
+    padding: 40px 20px;
+    background: #202358;
+    color: #ffffff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-form, .contact-info {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 18px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.contact-form h3, .contact-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #00ff80;
+}
+
+/* Submit Button Styling */
+.cta-button {
+    background: #41ac76; /* Green background color */
+    color: #ffffff; /* White text color */
+    padding: 12px 24px; /* Slightly larger padding for better proportions */
+    text-decoration: none;
+    width: 99%;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.5em;
+    margin-top: 20px;
+    display: inline-block;
+    cursor: pointer;
+    border: none; /* Remove default border */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Hover Effect */
+.cta-button:hover {
+    background: #369c61; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Active (Click) Effect */
+.cta-button:active {
+    background: #2d8a53; /* Even darker green on click */
+    transform: translateY(0); /* Reset upward movement */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow */
+}
+
+/* Focus Effect */
+.cta-button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(65, 172, 118, 0.5); /* Add a focus ring */
+}
+
+/* Label Styling */
+.form-group label {
+    display: block;
+    padding: 5px 0; /* Add some space above and below the label */
+    margin-bottom: 8px; /* Slightly more space below the label */
+    font-weight: 600; /* Semi-bold for better readability */
+    font-size: 1.1em; /* Slightly larger font size */
+    color: #ffffff; /* White text color to match your theme */
+    transition: color 0.3s ease; /* Smooth transition for hover/focus effects */
+}
+
+/* Hover Effect on Label */
+.form-group:hover label {
+    color: #00ff80; /* Change label color on hover */
+}
+
+/* Focus Effect on Input/Textarea */
+.form-group input:focus + label,
+.form-group textarea:focus + label {
+    color: #00ff80; /* Change label color when the input/textarea is focused */
+}
+
+.form-group input, .form-group textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group input:focus {
+    border-color: #41ac76; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(65, 172, 118, 0.5); /* Add a subtle shadow on focus */
+    outline: none; /* Remove default outline */
+    background-color: #ffffff; /* Change background color on focus */
+}
+
+/* Textarea Styling */
+.form-group textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: Arial, sans-serif; /* Use a clean, readable font */
+    line-height: 1.6; /* Improve line spacing for better readability */
+    color: #333; /* Darker text color for better contrast */
+    background-color: #f9f9f9; /* Light background for the textarea */
+    resize: vertical; /* Allow vertical resizing */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover and Focus Effects */
+.form-group textarea:hover {
+    border-color: #41ac76; /* Change border color on hover */
+}
+
+.form-group textarea:focus {
+    border-color: #41ac76; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(65, 172, 118, 0.5); /* Add a subtle shadow on focus */
+    outline: none; /* Remove default outline */
+    background-color: #ffffff; /* Change background color on focus */
+}
+
+/* Placeholder Styling */
+.form-group textarea::placeholder {
+    color: #999; /* Light gray placeholder text */
+    font-style: italic; /* Italicize placeholder text */
+}
+/* Contact Information Section */
+.contact-info {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #00ff80; /* Green color for the heading */
+}
+
+.contact-info p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #ffffff; /* White text color */
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+}
+
+.contact-info p i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #00ff80; /* Green color for icons */
+    font-size: 1.2em; /* Slightly larger icons */
+}
+
+.contact-info a {
+    color: #00ff80; /* Green color for links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.contact-info a:hover {
+    color: #41ac76; /* Darker green on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Social Media Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #00ff80; /* Green color for the heading */
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links ul li {
+    margin: 10px 0;
+}
+
+.social-links ul li a {
+    color: #00ff80; /* Green color for links */
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    transition: color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.social-links ul li a i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.2em; /* Slightly larger icons */
+}
+
+.social-links ul li a:hover {
+    color: #41ac76; /* Darker green on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Map Section */
+.map1 {
+    margin-top: 40px;
+    text-align: center; /* Center the map and heading */
+}
+
+.map1 h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #00ff80; /* Green color for the heading */
+}
+
+.map1 iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px; /* Rounded corners for the map */
+    border: 2px solid #00ff80; /* Green border around the map */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: box-shadow 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover Effect on Map */
+.map1 iframe:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    border-color: #41ac76; /* Darker green border on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-form, .contact-info {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form, .contact-info {
+        padding: 10px;
+    }
+
+    .map1 iframe {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .map1 iframe {
+        height: 200px;
+    }
+}

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours - Centre de Formation ProlikDesign</title>
+    <link rel="stylesheet" href="style.css"> <!-- Fichier CSS principal -->
+    <link rel="stylesheet" href="course.css"> <!-- Fichier CSS spécifique aux cours -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="img/site.webmanifest" />
+    <link rel="android-chrome" href="img/android-chrome-192x192.png">
+    <link rel="android-chrome" href="img/android-chrome-512x512.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script src="script-fr.js"></script> <!-- JavaScript pour le bouton d'inscription -->
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.png" alt="Centre de Formation ProlikDesign">
+                <div>
+                    <span>ProlikDesign</span><br>
+                    <small class="subtitle">Training center</small>
+                </div>
+            </div>
+            <!-- Icône du menu hamburger -->
+            <button id="menu-toggle" class="menu-toggle">
+                <i class="fas fa-bars"></i> <!-- Icône hamburger Font Awesome -->
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index-fr.html">Accueil</a></li>
+                    <li><a href="courses-fr.html" class="active">Cours</a></li>
+                    <li><a href="about-fr.html">À propos</a></li>
+                    <li><a href="contact-fr.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info1">
+                <a href="mailto:ProlikDesign25@gmail.com">
+                    <i class="fas fa-envelope icon"></i> Email
+                </a>
+                <a href="tel:+242056629702">
+                    <i class="fab fa-whatsapp icon"></i> WhatsApp
+                </a>
+            </div>
+            <div class="language-toggle">
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="fr" selected>Français</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Séparateur -->
+    <hr class="navbar-separator">
+
+    <!-- Section des Cours -->
+    <section id="courses" class="courses">
+        <h2>Nos Cours</h2>
+        <p>Découvrez notre gamme complète de cours conçus pour vous aider à maîtriser les logiciels d'architecture et de design.</p>
+
+        <!-- Cours d'Architecture -->
+        <h3 class="cat"><i class="fas fa-building icon"></i> Architecture</h3>
+        <div class="course-grid">
+            <!-- Revit Architecture & Structure -->
+            <div class="course">
+                <img src="img/revit.jpg" alt="Revit Architecture">
+                <h4>Revit Architecture </h4>
+                <p><strong>Pour qui est ce cours ?</strong> Débutants et professionnels en architecture et construction.</p>
+                <p><strong>Ce que vous apprendrez :</strong> Conception de bâtiments, modélisation structurelle et documentation avec Revit.</p>
+                <p><strong>Prérequis :</strong> Compétences de base en informatique.</p>
+                <p><strong>Durée :</strong> 80 heures</p>
+                <button class="enroll-button" data-course-name="Revit Architecture & Structure">S'inscrire </button>
+                <a href="revit-architecture.html" class="info-button">Voir plus</a>
+            </div>
+
+            <!-- 3Ds Max -->
+            <div class="course">
+                <img src="img/3dsmax.jpg" alt="3Ds Max">
+                <h4>3Ds Max</h4>
+                <p><strong>Pour qui est ce cours ?</strong> Artistes 3D et designers.</p>
+                <p><strong>Ce que vous apprendrez :</strong> Modélisation 3D, animation et rendu avec 3Ds Max.</p>
+                <p><strong>Prérequis :</strong> Compétences de base en informatique.</p>
+                <p><strong>Durée :</strong> 120 heures</p>
+                <button class="enroll-button" data-course-name="3Ds Max">S'inscrire </button>
+                <a href="3dsmax-fr.html" class="info-button">Voir Plus</a>
+            </div>
+
+            <!-- AutoCAD -->
+            <div class="course">
+                <img src="img/autocad.jpg" alt="AutoCAD">
+                <h4>AutoCAD</h4>
+                <p><strong>Pour qui est ce cours ?</strong> Architectes, ingénieurs et designers.</p>
+                <p><strong>Ce que vous apprendrez :</strong> Dessin 2D et modélisation 3D avec AutoCAD.</p>
+                <p><strong>Prérequis :</strong> Compétences de base en informatique.</p>
+                <p><strong>Durée :</strong> 90 heures</p>
+                <button class="enroll-button" data-course-name="AutoCAD">S'inscrire </button>
+                <a href="autocad-fr.html" class="info-button">Voir plus</a>
+            </div>
+
+            <!-- Archicad -->
+            <div class="course">
+                <img src="img/archicad.jpg" alt="Archicad">
+                <h4>Archicad</h4>
+                <p><strong>Pour qui est ce cours ?</strong> Architectes et designers.</p>
+                <p><strong>Ce que vous apprendrez :</strong> Conception de bâtiments et documentation avec Archicad.</p>
+                <p><strong>Prérequis :</strong> Compétences de base en informatique.</p>
+                <p><strong>Durée :</strong> 80 heures</p>
+                <button class="enroll-button" data-course-name="Archicad">S'inscrire </button>
+                <a href="archicad-fr.html" class="info-button">Voir plus</a>
+            </div>
+        </div>
+
+        <!-- Cours de Structure -->
+        <h3 class="cat"><i class="fas fa-ruler-combined icon"></i> Structure</h3>
+        <div class="course-grid">
+            <!-- Graitec OMD -->
+            <div class="course">
+                <img src="img/graitec.jpg" alt="Graitec OMD">
+                <h4>Graitec OMD</h4>
+                <p><strong>Pour qui est ce cours ?</strong> Ingénieurs et designers en structure.</p>
+                <p><strong>Ce que vous apprendrez :</strong> Analyse et conception structurelle avec Graitec OMD.</p>
+                <p><strong>Prérequis :</strong> Connaissances de base en ingénierie structurelle.</p>
+                <p><strong>Durée :</strong> 50 heures</p>
+                <button class="enroll-button" data-course-name="Graitec OMD">S'inscrire</button>
+                <a href="graitec-omd-fr.html" class="info-button">Voir plus</a>
+            </div>
+
+            <!-- Revit Structure -->
+            <div class="course">
+                <img src="img/revit_structure.jpg" alt="Revit Structure">
+                <h4>Revit Structure</h4>
+                <p><strong>Pour qui est ce cours ?</strong> Ingénieurs et designers en structure.</p>
+                <p><strong>Ce que vous apprendrez :</strong> Analyse, modélisation et documentation structurelle avec Revit.</p>
+                <p><strong>Prérequis :</strong> Connaissances de base en ingénierie structurelle.</p>
+                <p><strong>Durée :</strong> 40 heures</p>
+                <button class="enroll-button" data-course-name="Revit Structure">S'inscrire </button>
+                <a href="revit-structure-fr.html" class="info-button">Voir plus</a>
+            </div>
+
+            <!-- ETABS -->
+            <div class="course">
+                <img src="img/etabs.png" alt="ETABS">
+                <h4>ETABS</h4>
+                <p><strong>Pour qui est ce cours ?</strong> Ingénieurs et designers en structure.</p>
+                <p><strong>Ce que vous apprendrez :</strong> Analyse et conception structurelle avec ETABS.</p>
+                <p><strong>Prérequis :</strong> Connaissances de base en ingénierie structurelle.</p>
+                <p><strong>Durée :</strong> 50 heures</p>
+                <button class="enroll-button" data-course-name="ETABS">S'inscrire </button>
+                <a href="etabs-fr.html" class="info-button">Voir plus</a>
+            </div>
+
+            <!-- Robot Structure Analysis -->
+            <div class="course">
+                <img src="img/robot_structure.jpg" alt="Robot Structure Analysis">
+                <h4>Robot Structure Analysis</h4>
+                <p><strong>Pour qui est ce cours ?</strong> Ingénieurs et designers en structure.</p>
+                <p><strong>Ce que vous apprendrez :</strong> Analyse et conception structurelle avec Robot Structure.</p>
+                <p><strong>Prérequis :</strong> Connaissances de base en ingénierie structurelle.</p>
+                <p><strong>Durée :</strong> 50 heures</p>
+                <button class="enroll-button" data-course-name="Robot Structure Analysis">S'inscrire</button>
+                <a href="robot-structure-analysis-fr.html" class="info-button">Voir plus</a>
+            </div>
+        </div>
+
+        <!-- Cours de Rendu -->
+        <h3 class="cat"><i class="fas fa-paint-brush icon"></i> Rendu</h3>
+        <div class="course-grid">
+            <!-- V-ray for 3Ds Max -->
+            <div class="course">
+                <img src="img/v-ray3dsmax.jpg" alt="V-ray for 3Ds Max">
+                <h4>V-ray pour 3Ds Max</h4>
+                <p><strong>Pour qui est ce cours ?</strong> Artistes 3D et designers.</p>
+                <p><strong>Ce que vous apprendrez :</strong> Techniques de rendu photoréaliste avec V-ray.</p>
+                <p><strong>Prérequis :</strong> Connaissances de base en 3Ds Max.</p>
+                <p><strong>Durée :</strong> 20 heures</p>
+                <button class="enroll-button" data-course-name="V-ray pour 3Ds Max">S'inscrire </button>
+                <a href="v-ray-3dsmax-fr.html" class="info-button">Voir plus</a>
+            </div>
+
+            <!-- Enscape 3D -->
+            <div class="course">
+                <img src="img/Enscape.webp" alt="Enscape 3D">
+                <h4>Enscape 3D</h4>
+                <p><strong>Pour qui est ce cours ?</strong> Architectes et designers.</p>
+                <p><strong>Ce que vous apprendrez :</strong> Rendu en temps réel et visualisation avec Enscape 3D.</p>
+                <p><strong>Prérequis :</strong> Connaissances de base en modélisation 3D.</p>
+                <p><strong>Durée :</strong> 15 heures</p>
+                <button class="enroll-button" data-course-name="Enscape 3D">S'inscrire </button>
+                <a href="enscape-3d-fr.html" class="info-button">Voir plus</a>
+            </div>
+
+            <!-- Twinmotion -->
+            <div class="course">
+                <img src="img/twinmotion.jpg" alt="Twinmotion">
+                <h4>Twinmotion</h4>
+                <p><strong>Pour qui est ce cours ?</strong> Architectes et designers.</p>
+                <p><strong>Ce que vous apprendrez :</strong> Rendu en temps réel et animation avec Twinmotion.</p>
+                <p><strong>Prérequis :</strong> Connaissances de base en modélisation 3D.</p>
+                <p><strong>Durée :</strong> 20 heures</p>
+                <button class="enroll-button" data-course-name="Twinmotion">S'inscrire </button>
+                <a href="twinmotion-fr.html" class="info-button">Voir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Séparateur de Pied de Page -->
+    <hr class="footer-separator">
+
+    <!-- Pied de Page -->
+    <footer>
+        <p>© 2025 ProlikDesign Training Center. Tous droits réservés.</p>
+        <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook icon facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-twitter icon twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-linkedin icon"></i> LinkedIn</a></li>
+        </ul>
+    </footer>
+
+    <!-- Bouton Retour en Haut -->
+    <button id="back-to-top" title="Retour en haut"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Formulaire d'Inscription Modal -->
+    <div id="enrollment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeEnrollmentModal()">&times;</span>
+            <h2>Formulaire d'Inscription</h2>
+            <form id="enrollment-form">
+                <input type="hidden" id="course-name" name="course-name" value="">
+                <div class="form-group">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Téléphone :</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="profession">Profession :</label>
+                    <select id="profession" name="profession" required>
+                        <option value="" disabled selected>Sélectionnez votre profession</option>
+                        <option value="Étudiant">Étudiant</option>
+                        <option value="Architecte">Architecte</option>
+                        <option value="Ingénieur Civil">Ingénieur Civil</option>
+                        <option value="Ingénieur Structure">Ingénieur Structure</option>
+                        <option value="Chef de Chantier">Chef de Chantier</option>
+                        <option value="Designer d'Intérieur">Designer d'Intérieur</option>
+                        <option value="Architecte Paysagiste">Architecte Paysagiste</option>
+                        <option value="Designer de Bâtiments">Designer de Bâtiments</option>
+                        <option value="Métreur">Métreur</option>
+                        <option value="Chef de Projet">Chef de Projet</option>
+                        <option value="Responsable BIM">Responsable BIM</option>
+                        <option value="Visualisateur 3D">Visualisateur 3D</option>
+                        <option value="Technicien CAO">Technicien CAO</option>
+                        <option value="Ingénieur MEP">Ingénieur MEP</option>
+                        <option value="Urbaniste">Urbaniste</option>
+                        <option value="Ouvrier de Construction">Ouvrier de Construction</option>
+                        <option value="Ingénieur de Site">Ingénieur de Site</option>
+                        <option value="Promoteur Immobilier">Promoteur Immobilier</option>
+                        <option value="Freelance">Freelance</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                </div>
+                <button type="submit">Soumettre</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Custom Alert Modal -->
+    <div id="custom-alert" class="custom-alert">
+        <div class="custom-alert-content">
+            <span id="custom-alert-message"></span>
+            <button id="custom-alert-close" class="cta-button">OK</button>
+        </div>
+    </div>
+    
+    <script src="script-fr.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS with your User ID
+        (function () {
+            emailjs.init('sOXgL7TWgDee4c32L'); // Replace with your EmailJS User ID
+        })();
+        // Fonctionnalité de bascule de langue
+        const languageSelect = document.getElementById('language-select');
+        if (languageSelect) {
+            languageSelect.addEventListener('change', (event) => {
+                const selectedLanguage = event.target.value;
+                if (selectedLanguage === 'en') {
+                    window.location.href = 'courses.html'; // Rediriger vers la version anglaise
+                } else {
+                    window.location.href = 'courses-fr.html'; // Rediriger vers la version française
+                }
+            });
+        }
+    </script>
+</body>
+</html>

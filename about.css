@@ -1,0 +1,80 @@
+/* about.css */
+
+/* About Section */
+.about {
+    padding: 40px 20px;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #202358;
+}
+
+.about p {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mission, .vision, .team {
+    flex: 1;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.mission h3, .vision h3, .team h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #00ff80;
+}
+
+.mission p, .vision p, .team p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Icons */
+.mission .icon, .vision .icon, .team .icon {
+    font-size: 2.5em; /* Icon size */
+    color: #00ff80; /* Green color to match your theme */
+    margin-bottom: 15px; /* Space below the icon */
+    display: block; /* Ensure the icon is on its own line */
+}
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mission, .vision, .team {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mission, .vision, .team {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mission, .vision, .team {
+        padding: 8px;
+    }
+}

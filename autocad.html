@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCAD - ProlikDesign Training Center</title>
+    <link rel="stylesheet" href="style.css"> <!-- Main CSS file -->
+    <link rel="stylesheet" href="course-details.css"> <!-- Course-specific CSS file -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="img/site.webmanifest" />
+    <link rel="android-chrome" href="img/android-chrome-192x192.png">
+    <link rel="android-chrome" href="img/android-chrome-512x512.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script src="script.js"></script> <!-- JavaScript for enrollment button -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.png"  alt="ProlikDesign Training Center">
+            <div>
+                <span>ProlikDesign</span><br>
+                <small class="subtitle">Training center</small>
+                </div>
+            </div>
+            <!-- Hamburger Menu Icon -->
+            <button id="menu-toggle" class="menu-toggle">
+                <i class="fas fa-bars"></i> <!-- Font Awesome hamburger icon -->
+            </button>
+            <nav id="main-nav" >
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info1">
+                <a href="mailto:ProlikDesign25@gmail.com">
+                    <i class="fas fa-envelope icon"></i> Email
+                </a>
+                <a href="tel:+242056629702">
+                    <i class="fab fa-whatsapp icon"></i> WhatsApp
+                </a>
+            </div>
+            <div class="language-toggle">
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Separator -->
+    <hr class="navbar-separator">
+
+    <!-- Course Details Section -->
+    <section id="course-details" class="course-details">
+        <div class="course-header">
+            <img src="img/autocad.jpg" alt="AutoCAD">
+            <h1>AutoCAD</h1>
+            <p class="course-summary">Master 2D drafting and 3D modeling using AutoCAD.</p>
+            <button class="enroll-button" data-course-name="AutoCAD">Enroll Now</button>
+        </div>
+
+        <div class="course-content">
+            <!-- Course Overview -->
+            <div class="course-overview">
+                <h2>Course Overview</h2>
+                <p>This course is designed for architects, engineers, and designers who want to master AutoCAD for creating precise 2D drawings and 3D models. You will learn how to use AutoCAD's powerful tools to create professional designs and technical drawings.</p>
+            </div>
+
+            <!-- What You Will Learn -->
+            <div class="course-learn">
+                <h2>What You Will Learn</h2>
+                <ul>
+                    <li><i class="fas fa-check-circle icon"></i> 2D drafting techniques for architectural and engineering drawings.</li>
+                    <li><i class="fas fa-check-circle icon"></i> 3D modeling tools for creating complex designs.</li>
+                    <li><i class="fas fa-check-circle icon"></i> Annotation and dimensioning for technical drawings.</li>
+                    <li><i class="fas fa-check-circle icon"></i> Collaboration tools for team projects.</li>
+                </ul>
+            </div>
+
+            <!-- Course Requirements -->
+            <div class="course-requirements">
+                <h2>Requirements</h2>
+                <ul>
+                    <li><i class="fas fa-check-circle icon"></i> Basic computer skills.</li>
+                    <li><i class="fas fa-check-circle icon"></i> No prior experience with AutoCAD required.</li>
+                    <li><i class="fas fa-check-circle icon"></i> A computer with AutoCAD installed (trial version available).</li>
+                </ul>
+            </div>
+
+            <!-- Course Duration -->
+            <div class="course-duration">
+                <h2>Course Duration</h2>
+                <p><i class="fas fa-clock icon"></i> 90 hours of training .</p>
+            </div>
+
+            <!-- Instructor -->
+            <div class="course-instructor">
+                <h2>Instructor</h2>
+                <div class="instructor-info">
+                    <img src="img/instructor.jpg" alt="Instructor">
+                    <div class="instructor-details">
+                        <h3>Regis Cendres NGOUALATSIO</h3>
+                        <p>Expérience in Architecture and Design : 
+1. Autocad : 6 years
+2. Other programmes: 5 years</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="course-testimonials">
+                <h2>What Our Students Say</h2>
+                <div class="testimonial">
+                    <p>"This course was incredibly helpful. I now feel confident using AutoCAD for my architectural projects."</p>
+                    <p class="testimonial-author">- Laura Johnson</p>
+                </div>
+                <div class="testimonial">
+                    <p>"The instructor was very knowledgeable and supportive. I highly recommend this course to anyone looking to learn AutoCAD."</p>
+                    <p class="testimonial-author">- Ahmed Ali</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Separator -->
+    <hr class="footer-separator">
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 ProlikDesign Training Center. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook icon facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-twitter icon twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-linkedin icon"></i> LinkedIn</a></li>
+        </ul>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Retour en haut"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Enrollment Form Modal -->
+    <div id="enrollment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeEnrollmentModal()">&times;</span>
+            <h2>Enrollment Form</h2>
+            <form id="enrollment-form">
+                <input type="hidden" id="course-name" name="course-name" value="AutoCAD">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="profession">Profession:</label>
+                    <select id="profession" name="profession" required>
+                        <option value="" disabled selected>Select your profession</option>
+                        <option value="Student">Student</option>
+                        <option value="Architect">Architect</option>
+                        <option value="Civil Engineer">Civil Engineer</option>
+                        <option value="Structural Engineer">Structural Engineer</option>
+                        <option value="Construction Manager">Construction Manager</option>
+                        <option value="Interior Designer">Interior Designer</option>
+                        <option value="Landscape Architect">Landscape Architect</option>
+                        <option value="Building Designer">Building Designer</option>
+                        <option value="Quantity Surveyor">Quantity Surveyor</option>
+                        <option value="Project Manager">Project Manager</option>
+                        <option value="BIM Manager">BIM Manager</option>
+                        <option value="3D Visualizer">3D Visualizer</option>
+                        <option value="CAD Technician">CAD Technician</option>
+                        <option value="MEP Engineer">MEP Engineer</option>
+                        <option value="Urban Planner">Urban Planner</option>
+                        <option value="Construction Worker">Construction Worker</option>
+                        <option value="Site Engineer">Site Engineer</option>
+                        <option value="Real Estate Developer">Real Estate Developer</option>
+                        <option value="Freelancer">Freelancer</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Custom Alert Modal -->
+    <div id="custom-alert" class="custom-alert">
+        <div class="custom-alert-content">
+            <span id="custom-alert-message"></span>
+            <button id="custom-alert-close" class="cta-button">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Language Toggle Script -->
+    <script>
+        // Initialize EmailJS with your User ID
+        (function () {
+            emailjs.init('sOXgL7TWgDee4c32L'); // Replace with your EmailJS User ID
+        })();
+        // Language toggle functionality
+        const languageSelect = document.getElementById('language-select');
+        if (languageSelect) {
+            languageSelect.addEventListener('change', (event) => {
+                const selectedLanguage = event.target.value;
+                if (selectedLanguage === 'en') {
+                    window.location.href = 'autocad.html'; // Redirect to English version
+                } else {
+                    window.location.href = 'autocad-fr.html'; // Redirect to French version
+                }
+            });
+        }
+    </script>
+</body>
+</html>
